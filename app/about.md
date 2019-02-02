@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: post
 title: About River Grace
 permalink: /about/
 ---

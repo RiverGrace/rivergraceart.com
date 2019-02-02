@@ -21,14 +21,17 @@ description: >- # this means to ignore newlines until "baseurl:"
   It's, like, my art.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://www.rivergraceart.com" # the base hostname & protocol for your site, e.g. http://example.com
-# twitter_username: jekyllrb
-# github_username:  jekyll
+# facebook_url:
+# github_url:
 
 # Build settings
 markdown: kramdown
-theme: minima
+# theme: minima
 plugins:
   - jekyll-feed
+
+tiles-source: pages # accepts "posts" or "pages"
+tiles-count: 6
 
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
@@ -58,3 +61,7 @@ defaults:
       path: ""
     values:
       layout: post
+      show_tile: false
+
+# sass:
+#   style: compressed
