@@ -2,17 +2,8 @@ require 'json'
 require 'httpclient'
 require 'fileutils'
 
-PAGE_NAMES = %w{
-  /index /about /404
-}
-POST_EXTNAMES = %w{
-  .html .markdown .mkdown .mkdn .mkd .md
-}
 def path_for_file(name)
-  pagename = File.join(File.dirname(name), File.basename(name, File.extname(name)))
-  if PAGE_NAMES.include?(pagename)
-    File.join(".", "app", name)
-  elsif POST_EXTNAMES.include?(File.extname(name))
+  if File.basename(name) =~ /^\d\d\d\d-\d\d-\d\d-/
     File.join(".", "app", "_posts", name)
   else
     File.join(".", "app", name)
