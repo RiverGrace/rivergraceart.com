@@ -46,3 +46,17 @@ plugins:
 #   - netlify.toml
 #   - functions
 #   - dropbox.rb
+
+tag_page_layout: tag_page
+tag_page_dir: tag
+ignored_tags: []
+
+# https://jekyllrb.com/docs/permalinks/
+# permalink: /:categories/:year/:month/:day/:title:output_ext
+
+defaults:
+  -
+    scope:
+      path: ""
+    values:
+      layout: post
