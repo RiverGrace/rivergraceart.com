@@ -2,6 +2,7 @@
 layout: post
 title: About River Grace
 permalink: /about/
+nav-menu: true
 ---
 
 At my core, I am a person who is terrified of forgetting. 
