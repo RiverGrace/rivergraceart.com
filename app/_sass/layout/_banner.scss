@@ -28,7 +28,8 @@
 			@include vendor('transition', 'opacity #{_duration(banner)} ease');
 			@include vendor('transition-delay', '0.75s');
 			@include vendor('pointer-events', 'none');
-			background-color: _palette(bg);
+			// background-color: _palette(bg);
+			background-image: linear-gradient(to right, _palette(bg), transparent 50%, transparent 100%);
 			content: '';
 			display: block;
 			height: 100%;
